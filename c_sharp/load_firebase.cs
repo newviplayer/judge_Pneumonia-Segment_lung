@@ -22,7 +22,7 @@ namespace use_lung_model_project_v2
         private FirebaseStorage fb_storage;
         public load_firebase()
         {
-            string path = AppDomain.CurrentDomain.BaseDirectory + @"process-lung-firebase-adminsdk-mq6io-4a19161bc9.json";
+            string path = AppDomain.CurrentDomain.BaseDirectory + @"json_file";
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
             db = FirestoreDb.Create("process-lung");
             fb_storage = new FirebaseStorage("process-lung.appspot.com");
@@ -33,7 +33,7 @@ namespace use_lung_model_project_v2
         {
             var config = new FirebaseAuthConfig
             {
-                ApiKey = "AIzaSyDK7iHLAZl3xhz3eJw8Yx9jtCzoOvz0Wts",
+                ApiKey = "APIKEY",
                 AuthDomain = "process-lung.firebaseapp.com",
                 Providers = new FirebaseAuthProvider[]
                 {
